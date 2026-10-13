@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma… | Anthropic × Claude #08</title>
+<meta name="description" content="Austin Lau ไม่เคยเขียนโค้ดมาก่อน ใช้ Claude Code สร้าง Figma plugin ที่รับ headline หลายแบบครั้งเดียว แล้วสร้างโฆษณาแต่ละแบบเป็น frame แยก…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/08-how-anthropic-uses-claude-in-marketing.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma… | Anthropic × Claude #08">
+<meta property="og:description" content="Austin Lau ไม่เคยเขียนโค้ดมาก่อน ใช้ Claude Code สร้าง Figma plugin ที่รับ headline หลายแบบครั้งเดียว แล้วสร้างโฆษณาแต่ละแบบเป็น frame แยก…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/08-how-anthropic-uses-claude-in-marketing.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma… | Anthropic × Claude #08">
+<meta name="twitter:description" content="Austin Lau ไม่เคยเขียนโค้ดมาก่อน ใช้ Claude Code สร้าง Figma plugin ที่รับ headline หลายแบบครั้งเดียว แล้วสร้างโฆษณาแต่ละแบบเป็น frame แยก…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma plugin สร้างโฆษณาหลายแบบใน 30 วินาที — How Anthropic ", "description": "Austin Lau ไม่เคยเขียนโค้ดมาก่อน ใช้ Claude Code สร้าง Figma plugin ที่รับ headline หลายแบบครั้งเดียว แล้วสร้างโฆษณาแต่ละแบบเป็น frame แยก…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/08-how-anthropic-uses-claude-in-marketing.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/08-how-anthropic-uses-claude-in-marketing.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "How Anthropic uses Claude in Marketing", "url": "https://www.youtube.com/watch?v=Jp83_JMK74o", "duration": "PT2M42S"}, "about": ["marketing", "claude-code", "workflow-automation", "adoption"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#08 นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma plugin สร้างโฆษณาหลายแบบใน 30 วินาที", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/08-how-anthropic-uses-claude-in-marketing.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#08 · How Anthropic uses Claude · 2:42</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma plugin สร้างโฆษณาหลายแบบใน 30 วินาที</h1>
+<p class="mono text-xs text-zinc-500 mt-1">How Anthropic uses Claude in Marketing</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Austin Lau (Growth marketer ที่ Anthropic (ตามคำอธิบายคลิป))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> คนทำ marketing หรืองานสร้างสรรค์ที่ไม่เขียนโค้ดและมีงานซ้ำๆ ใน Figma หรือเครื่องมืออื่น</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Austin Lau ไม่เคยเขียนโค้ดมาก่อน ใช้ Claude Code สร้าง Figma plugin ที่รับ headline หลายแบบครั้งเดียว แล้วสร้างโฆษณาแต่ละแบบเป็น frame แยก ผู้พูดบอกว่างานที่เคยใช้ราว 30 นาทีเหลือราว 30 วินาที และแนะนำให้เริ่มจากงานซ้ำๆ เล็กๆ ที่อธิบายปัญหาให้ชัดได้</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">A non-coder growth marketer used Claude Code to build a Figma plugin that generates ad variants from one pasted list, cutting about 30 minutes of work to about 30 seconds.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>ผู้พูดบอกว่าไม่เคยเขียนโค้ดเลย ถึงขั้นต้อง Google ว่าเปิด terminal บน Mac อย่างไร และตอน Claude Code เปิดตัวยังไม่เข้าใจว่าใช้ทำอะไร</li><li>งานของเขาครอบคลุม paid social และ app store ที่ใช้ visual creative ใน Figma ซึ่งทีมออกแบบเป็นคนสร้าง</li><li>ปัญหาคือต้องทำหลายแบบ: copy frame เดิม วาง headline จาก Google Doc สลับไปมา ทำซ้ำ 10 แบบ x 5 aspect ratio เวลาสะสมเร็วมาก</li><li>เขาให้ Claude Code สร้าง Figma plugin ที่ให้วาง copy ทั้งหมดครั้งเดียว</li><li>เดโม: เลือก frame, เปิด plugin, กด identify template components (ระบุส่วนประกอบเช่น headline, CTA, code block), เลือกอัปเดตแค่ headline, วางรายการ headline, กด generate ad variants ได้แต่ละแบบเป็น frame แยก</li><li>ผู้พูดบอกว่างานเดิมประมาณ 30 นาที ตอนนี้ราว 30 วินาที</li><li>คำแนะนำสำหรับคนไม่เขียนโค้ด: ดูงานที่ซ้ำหรือน่าจะ automate ได้ เริ่มจากเรื่องเล็กและง่ายมาก</li><li>สิ่งที่ต้องมีคืออธิบายปัญหาและสิ่งที่อยากได้ให้ชัดเจนกระชับ ช่องว่างระหว่างอยากให้มี กับสร้างเองได้ เล็กกว่าที่คนคิด</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>เลือก frame ที่เป็น template โฆษณาใน Figma</li><li>เปิด Figma plugin ที่สร้างไว้ด้วย Claude Code</li><li>กด identify template components ให้ plugin ระบุ headline, CTA และ code block</li><li>ติ๊กเลือกเฉพาะส่วนที่จะอัปเดต (ในเดโมคือ headline)</li><li>คัดลอกรายการ headline จากเอกสารแล้ววางใน plugin ครั้งเดียว</li><li>กด generate ad variants ได้แต่ละแบบเป็น frame แยก</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ความแปรผันที่ต้องทำ: 10 แบบ ข้าม 5 aspect ratio</li><li>เวลาเดิมประมาณ 30 นาที เหลือประมาณ 30 วินาที (ผู้พูดบอก)</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“You don&#x27;t need to know how to code.”</p><p class='text-zinc-500'>ไม่จำเป็นต้องเขียนโค้ดเป็น</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“So, the gap between I wish this existed and wow, I can actually build this myself is actually much smaller than people realize.”</p><p class='text-zinc-500'>ช่องว่างระหว่าง อยากให้มีของแบบนี้ กับ สร้างเองได้จริงๆ เล็กกว่าที่คนคิดมาก</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I&#x27;ve never written a single line”</p><p class='text-zinc-500'>ฉันไม่เคยเขียนโค้ดสักบรรทัด</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ไล่หางานซ้ำๆ ในกระบวนการของตัวเอง แล้วเลือกชิ้นเล็กสุดมาลองก่อน</li><li>อธิบายปัญหาให้ Claude Code ด้วยภาษาธรรมดา ไม่ต้องรู้โค้ด</li><li>ลองสร้างเครื่องมือเฉพาะทาง เช่น plugin สำหรับเครื่องมือที่ใช้อยู่ทุกวัน</li><li>จับเวลาก่อน-หลัง เพื่อรู้ว่าคุ้มจริงไหม</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ชื่อและตำแหน่งผู้พูดมาจากคำอธิบายคลิป ไม่ได้ยินแนะนำตัวใน transcript</li><li>auto-caption สะกด Claude Code เป็น Cloud Code แก้ตามบริบท</li><li>ตัวเลข 30 นาที เป็น 30 วินาที เป็นข้ออ้างของผู้พูด ไม่มีหลักฐานวัดจริงในคลิป</li><li>ไม่ได้แสดงว่า Claude Code สร้าง plugin ขึ้นมาอย่างไร (prompt/ขั้นตอนการสร้าง) เดโมแสดงเฉพาะการใช้ plugin ที่เสร็จแล้ว</li><li>คำอธิบายคลิปมีทั้ง &#x27;building Figma plugins&#x27; และ &#x27;automated ad generation workflows&#x27; แต่ใน transcript เห็นเฉพาะ Figma plugin</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=Jp83_JMK74o" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/07-how-anthropic-uses-claude-in-product-manageme.html" class="hover:underline">← #07 PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย test case ของ evals โดยไม่ต้องเขียน SQL</a></nav>
+</main></body></html>

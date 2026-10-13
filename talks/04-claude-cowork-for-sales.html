@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประช… | Anthropic × Claude #04</title>
+<meta name="description" content="Brittany สร้าง skill ใน Cowork ชื่อ account strategy builder ที่ดึงข้อมูลลูกค้าจาก Salesforce, data warehouse, อีเมล, Slack และเว็บพร้อมกัน แล้วสรุปเป็น…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/04-claude-cowork-for-sales.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประช… | Anthropic × Claude #04">
+<meta property="og:description" content="Brittany สร้าง skill ใน Cowork ชื่อ account strategy builder ที่ดึงข้อมูลลูกค้าจาก Salesforce, data warehouse, อีเมล, Slack และเว็บพร้อมกัน แล้วสรุปเป็น…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/04-claude-cowork-for-sales.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประช… | Anthropic × Claude #04">
+<meta name="twitter:description" content="Brittany สร้าง skill ใน Cowork ชื่อ account strategy builder ที่ดึงข้อมูลลูกค้าจาก Salesforce, data warehouse, อีเมล, Slack และเว็บพร้อมกัน แล้วสรุปเป็น…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประชุมในไม่กี่นาที — How Anthropic uses Claude #04", "description": "Brittany สร้าง skill ใน Cowork ชื่อ account strategy builder ที่ดึงข้อมูลลูกค้าจาก Salesforce, data warehouse, อีเมล, Slack และเว็บพร้อมกัน แล้วสรุปเป็น…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/04-claude-cowork-for-sales.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/04-claude-cowork-for-sales.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "Claude Cowork for sales", "url": "https://www.youtube.com/watch?v=dDg7vhvtbEE", "duration": "PT3M32S"}, "about": ["sales", "cowork", "workflow-automation", "gtm"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#04 AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประชุมในไม่กี่นาที", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/04-claude-cowork-for-sales.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#04 · Claude Cowork · 3:32</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประชุมในไม่กี่นาที</h1>
+<p class="mono text-xs text-zinc-500 mt-1">Claude Cowork for sales</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Brittany (growth account executive ดูแลพอร์ตลูกค้า startup เชิงกลยุทธ์ (ตามที่แนะนำตัวในคลิป))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> ทีมขายหรือ account manager ที่ข้อมูลลูกค้ากระจายหลายระบบ และอยากรู้วิธีสร้าง skill จากการคุยกับ Claude</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Brittany สร้าง skill ใน Cowork ชื่อ account strategy builder ที่ดึงข้อมูลลูกค้าจาก Salesforce, data warehouse, อีเมล, Slack และเว็บพร้อมกัน แล้วสรุปเป็น account brief ก่อนประชุมครั้งแรก หลังประชุมใช้ skill call transcript processor สร้าง action items, ข้อความ Slack ภายใน และข้อความตามลูกค้า ทั้งหมดรออนุมัติก่อนส่ง</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">A growth AE builds a Cowork skill that pulls CRM, warehouse, email, Slack and web data into an account brief before a first customer call, and another that turns the call transcript into follow-ups pending her approval.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>ก่อนคุยลูกค้าครั้งแรก ต้องรู้เร็วว่าลูกค้าคือใคร สร้างอะไร ใช้ Claude อย่างไร ใช้จ่ายเท่าไร และมีความเสี่ยงกับแนวโน้มการเติบโตอะไร ข้อมูลพวกนี้มีอยู่แต่กระจายใน Salesforce, data warehouse, call recordings, Slack, email และเว็บ</li><li>การสร้าง skill ทำโดยเปิด session ใน Cowork แล้วอธิบายว่าอยากรู้อะไรตอนเดินเข้าประชุม Claude ร่างไฟล์ skill ให้จากบทสนทนานั้น</li><li>ไฟล์ skill คือไฟล์ text ที่บอก Claude ว่าจะเข้าหางานอย่างไร: ดูแหล่งข้อมูลไหน สัญญาณ usage แบบไหนสำคัญ และนำเสนอผลอย่างไร</li><li>ใน settings เธอต่อ data warehouse, Salesforce, เว็บ, อีเมล และ Slack ไว้แล้ว และเลือกโฟลเดอร์บน desktop ที่ Claude อ่าน แก้ และบันทึกไฟล์ได้</li><li>เธอลอง skill กับบัญชีทดสอบ ปรับแก้ และเพราะเป็น plain text จึงเปิดตรวจได้เสมอว่า skill ทำอะไร</li><li>ก่อนประชุม พิมพ์ / เลือก skill account strategy builder แล้วใส่ชื่อบัญชี (ตัวอย่าง Acme Corp) Claude รัน data pulls พร้อมกัน ได้แก่ calls 90 วันล่าสุด แนวโน้มรายได้ open opportunities ใน Salesforce ข้อมูลใน email/calendar/Slack และข่าว funding จากเว็บ</li><li>Claude สังเคราะห์เป็น strategy doc เก็บในโฟลเดอร์ของบัญชี อ่านเหมือน account brief เต็ม มีข้อมูลการใช้จ่าย stakeholder mapping โมเดล Claude ที่ลูกค้าใช้สร้าง open deals และ risk signals</li><li>หลังประชุม กลับมา session เดิมที่ยังมี account context อยู่ พิมพ์ / เลือก call transcript processor Claude ดึง transcript แล้วสร้าง 3 อย่าง: action items ส่วนตัว, ข้อความ Slack ภายในที่มี key takeaways next steps และ action owners, และข้อความตามลูกค้า แต่ละชิ้นรออนุมัติก่อนส่งจริง ผู้พูดบอกว่า flow หลังประชุมที่เคยใช้ 30 นาที เหลือไม่กี่นาที และละเอียดกว่าที่เขียนจากความจำ</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>เปิด session ใน Cowork แล้วอธิบายว่าอยากรู้อะไรก่อนเข้าประชุมลูกค้า ให้ Claude ร่างไฟล์ skill จากบทสนทนา</li><li>ตั้งค่า connectors ใน settings: data warehouse, Salesforce, เว็บ, อีเมล, Slack และเลือกโฟลเดอร์บน desktop ที่ Claude อ่าน แก้ บันทึกได้</li><li>ทดลอง skill กับบัญชีทดสอบ ปรับแก้ ตรวจไฟล์ plain text ว่า skill ทำอะไร</li><li>ก่อนประชุม: เข้า Cowork พิมพ์ / เลือก account strategy builder ใส่ชื่อบัญชี (ตัวอย่าง Acme Corp)</li><li>Claude รัน data pulls พร้อมกัน: calls 90 วัน, revenue trends, open opportunities ใน Salesforce, email/calendar/activity/Slack, ข่าว funding จากเว็บ</li><li>Claude สังเคราะห์เป็น strategy doc เก็บใน account folder (spend, stakeholder mapping, โมเดลที่ใช้, open deals, risk signals)</li><li>หลังประชุม: กลับ session เดิม พิมพ์ / เลือก call transcript processor</li><li>Claude ดึง transcript สร้าง action items ส่วนตัว, ข้อความ Slack ภายใน, ข้อความตามลูกค้า แล้วรออนุมัติทีละชิ้นก่อนส่ง</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ดึง calls ย้อนหลัง 90 วันของบัญชี</li><li>flow หลังประชุมเดิมใช้ประมาณ 30 นาที เหลือ &quot;ไม่กี่นาที&quot; (ผู้พูดประเมินเอง)</li><li>ผลลัพธ์หลังประชุม 3 ชิ้น: action items ส่วนตัว, Slack ภายใน, ข้อความตามลูกค้า</li><li>แหล่งข้อมูลที่ต่อ 5 แหล่ง: data warehouse, Salesforce, เว็บ, อีเมล, Slack (รวมถึง calendar/call recordings ที่ดึงตอนรัน)</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“Clod drafted a skill file from that conversation, which is basically a text file that tells Clod how to approach the task.”</p><p class='text-zinc-500'>Claude ร่างไฟล์ skill จากบทสนทนา ซึ่งคือไฟล์ text ที่บอก Claude ว่าจะเข้าหางานอย่างไร (ASR เขียน Clod)</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“Instead of spending the meeting just getting oriented, I can show up with real context and make the first impression count.”</p><p class='text-zinc-500'>แทนที่จะใช้เวลาประชุมปรับตัว เธอไปถึงพร้อม context จริงและสร้างความประทับใจแรกได้</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“Now, the whole post-meeting flow that used to take me 30 minutes is done in just a couple of minutes, and it&#x27;s way more thorough than what I&#x27;d write from memory.”</p><p class='text-zinc-500'>flow หลังประชุมที่เคยใช้ 30 นาที เสร็จในไม่กี่นาที และละเอียดกว่าที่เขียนจากความจำ</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>อธิบายให้ Cowork ฟังว่าอยากรู้อะไรก่อนเข้าประชุม แล้วให้มันร่างไฟล์ skill ให้ ไม่ต้องเขียนเองจากศูนย์</li><li>ต่อ connectors ที่ข้อมูลลูกค้ากระจายอยู่ แล้วให้ skill ดึงทุกแหล่งพร้อมกัน แทนไล่เปิดทีละระบบ</li><li>ทดสอบกับบัญชีทดลองและเปิดไฟล์ plain text ตรวจได้ว่า skill ทำอะไร ก่อนใช้กับลูกค้าจริง</li><li>ใช้ session เดียวต่อเนื่องก่อนและหลังประชุม เพื่อให้ Claude มี account context ติดอยู่ตอนสรุปงานตามหลัง</li><li>ตั้งให้ทุกข้อความที่ออกไปข้างนอกรอการอนุมัติของคนก่อนส่งเสมอ</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>Transcript เป็น YouTube auto-caption สะกด Claude เป็น &quot;Clod&quot; / &quot;Cloud&quot; และ Cowork เป็น &quot;Co-work&quot; ในหลายจุด ชื่อ skill &quot;account strategy builder&quot; กับ &quot;call transcript processor&quot; ตามที่ฟังได้ ยังไม่ยืนยันการสะกดทางการ</li><li>ต้นคลิปมีบรรทัด &quot;Hey Mark. Hi, I&#x27;m Brittany.&quot; เป็นการทักทายสั้นๆ ไม่ชัดว่า Mark คือใคร (อาจเป็นคนทักในซีรีส์เดียวกัน) ไม่ได้นำมาใช้</li><li>นามสกุลของ Brittany ไม่ได้ยินในเสียงพูด และไม่มีชื่อบริษัทในเสียง คำอธิบายคลิปเป็นแหล่งเดียวที่ระบุว่าคือซีรีส์ How Anthropic uses Claude</li><li>เวลาที่ประหยัด (30 นาทีเหลือไม่กี่นาที) เป็นการประเมินของผู้พูดเอง และตัวอย่าง Acme Corp เป็นบัญชีสมมติ</li><li>ไม่ได้แสดงเนื้อหาของไฟล์ skill จริงบนจอให้อ่านใน transcript</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=dDg7vhvtbEE" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/03-claude-cowork-for-marketing-ops.html" class="hover:underline">← #03 ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข คนเป็นคนกำหนดเรื่องเล่า</a><a href="../talks/05-how-anthropic-uses-claude-in-cybersecurity.html" class="hover:underline ml-auto text-right">#05 ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert เหลือเป็นนาที →</a></nav>
+</main></body></html>

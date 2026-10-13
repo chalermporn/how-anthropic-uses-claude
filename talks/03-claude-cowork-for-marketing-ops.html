@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข… | Anthropic × Claude #03</title>
+<meta name="description" content="Ian ทำ metrics review รายสัปดาห์ (เอกสารเต็มสำหรับทีมมาร์เก็ตติ้ง กับสไลด์เดียวสำหรับผู้บริหาร) โดยแปลงขั้นตอนเป็น skill ใน Cowork ให้ Claude…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/03-claude-cowork-for-marketing-ops.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข… | Anthropic × Claude #03">
+<meta property="og:description" content="Ian ทำ metrics review รายสัปดาห์ (เอกสารเต็มสำหรับทีมมาร์เก็ตติ้ง กับสไลด์เดียวสำหรับผู้บริหาร) โดยแปลงขั้นตอนเป็น skill ใน Cowork ให้ Claude…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/03-claude-cowork-for-marketing-ops.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข… | Anthropic × Claude #03">
+<meta name="twitter:description" content="Ian ทำ metrics review รายสัปดาห์ (เอกสารเต็มสำหรับทีมมาร์เก็ตติ้ง กับสไลด์เดียวสำหรับผู้บริหาร) โดยแปลงขั้นตอนเป็น skill ใน Cowork ให้ Claude…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข คนเป็นคนกำหนดเรื่องเล่า — How Anthropic uses Claude ", "description": "Ian ทำ metrics review รายสัปดาห์ (เอกสารเต็มสำหรับทีมมาร์เก็ตติ้ง กับสไลด์เดียวสำหรับผู้บริหาร) โดยแปลงขั้นตอนเป็น skill ใน Cowork ให้ Claude…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/03-claude-cowork-for-marketing-ops.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/03-claude-cowork-for-marketing-ops.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "Claude Cowork for marketing ops", "url": "https://www.youtube.com/watch?v=lsufr1i6ACY", "duration": "PT3M35S"}, "about": ["marketing", "cowork", "workflow-automation", "team-practice"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#03 ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข คนเป็นคนกำหนดเรื่องเล่า", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/03-claude-cowork-for-marketing-ops.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#03 · Claude Cowork · 3:35</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข คนเป็นคนกำหนดเรื่องเล่า</h1>
+<p class="mono text-xs text-zinc-500 mt-1">Claude Cowork for marketing ops</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Ian (marketing ops and analytics (ตามที่แนะนำตัวในคลิป ไม่ได้ยินชื่อบริษัท แต่คลิปอยู่ในซีรีส์ของ Anthropic))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> ทีม ops หรือ analytics ที่ทำรายงานซ้ำทุกสัปดาห์ และอยากทำให้กระบวนการเป็นมาตรฐานแชร์ข้ามทีมได้</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Ian ทำ metrics review รายสัปดาห์ (เอกสารเต็มสำหรับทีมมาร์เก็ตติ้ง กับสไลด์เดียวสำหรับผู้บริหาร) โดยแปลงขั้นตอนเป็น skill ใน Cowork ให้ Claude ดึงและตรวจตัวเลข ส่วนคนตัดสินว่าจะเล่าเรื่องอะไร เพราะขั้นตอนอยู่ใน skill จึงรันซ้ำได้เหมือนเดิมทุกสัปดาห์และแชร์ให้ทีมได้</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">A marketing ops analyst turns the weekly metrics review into Cowork skills: Claude gathers and verifies numbers, the human steers the narrative, and the skill makes the process repeatable and shareable.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>งานเดิมคือดึงข้อมูลจากราว 6 แหล่งมาทำ metrics review ทุกสัปดาห์ เป็นเอกสารเต็มสำหรับทีมมาร์เก็ตติ้ง และสไลด์เดียวสำหรับผู้บริหาร</li><li>กระบวนการแตกเป็น connectors กับ 3 skills: เตรียม review, proofread, และจัดการ action items รวมกันแล้วรันซ้ำแบบเดียวกันทุกสัปดาห์และแชร์ทีมได้</li><li>ทุกเย็นวันอาทิตย์ scheduled task อ่าน review สัปดาห์ก่อนกับ transcript ประชุม เช็ก Slack ว่าทีมขายโฟกัสอะไร query warehouse แล้วทิ้งโฟลเดอร์ตัวเลขกับข้อเสนอ focus area ไว้ให้</li><li>เช้าวันจันทร์ Ian เปิด Cowork ดู takeaways แล้วตัดสินเอง เพราะ Claude ดึงตัวเลขเก่ง แต่เรื่องที่จะเล่าเป็นการตัดสินใจของคน เช่นสัปดาห์นี้เป็นช่วงต้นไตรมาส จึงโฟกัสแผน Q2 แล้วโยน QBR doc ให้ Claude</li><li>ถ้ามีอะไรไม่ตรงกัน skill ให้ Claude flag และถามแทนการเดา ตัวอย่างคือทีมขายจัดโครงสร้างใหม่ ทำให้รายงานไม่ตรงกับของทีมขาย Claude แสดงช่องว่างแล้วถามว่าจะจัดการอย่างไร Ian เลือกตามทีมขาย</li><li>skill proofread ตรวจว่าทุกตัวเลขในร่างย้อนกลับไปที่แหล่งข้อมูลที่ verify แล้ว</li><li>ร่างแรกมีแค่ตารางตัวเลขกับ headlines ให้ตรวจ outline ก่อน แล้วค่อยสั่งขยาย skill เติมรายละเอียดและตัวอย่าง โดยไม่แตะ headlines ที่ตกลงกันแล้ว</li><li>พอสั่ง ship it Claude ทำเอกสารฉบับทีม เขียนข้อความลง Slack channel สร้างงานติดตามเป็น task ใน Asana (ASR เขียนว่า sauna) และสร้างสไลด์ผู้บริหารจากข้อมูลและเรื่องเล่าชุดเดียวกัน (อะไรเปลี่ยน ทำไม ควรทำอะไร) ปิดท้ายด้วยการถาม Claude ว่าสัปดาห์นี้เรียนรู้อะไรที่ควรเข้า skill เช่นโครงสร้างทีมขายใหม่และการแก้ของ Ian ถูกบันทึก Claude อัปเดต skill แล้วแชร์ให้ทีมรันได้ผลเหมือนกัน</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>เย็นวันอาทิตย์: scheduled task อ่าน review สัปดาห์ก่อน + transcript ประชุม เช็ก Slack ที่ทีมขายโฟกัส query warehouse แล้วทิ้งโฟลเดอร์ตัวเลขและ focus area ที่แนะนำ</li><li>เช้าวันจันทร์: เปิด Cowork ถามว่าการเตรียมเป็นอย่างไร ดู takeaways และ focus ที่แนะนำ</li><li>ผู้ใช้ตัดสินโฟกัส (ตัวอย่าง: แผน Q2) แล้วใส่ QBR doc พร้อมบอกว่าให้นำด้วยเรื่องอะไร</li><li>Claude flag จุดที่ข้อมูลไม่ตรง (เช่นทีมขายปรับโครงสร้าง) และถามว่าจัดการอย่างไร ผู้ใช้เลือกตามทีมขาย</li><li>skill proofread ตรวจว่าทุกตัวเลขย้อนกลับไปแหล่งข้อมูลที่ verify แล้ว</li><li>ร่างแรก: ตารางตัวเลข + headlines ผู้ใช้ตรวจ outline</li><li>สั่งขยาย: skill เติมรายละเอียดและตัวอย่างโดยคง headlines เดิม</li><li>สั่ง ship it: ได้เอกสารฉบับทีม ข้อความ Slack และ follow-up เป็น task</li><li>Claude สร้างสไลด์ผู้บริหารจากข้อมูลและเรื่องเล่าเดียวกัน</li><li>ถาม Claude ว่าสัปดาห์นี้เรียนรู้อะไรที่ควรเข้า skill แล้วให้ Claude อัปเดต skill ก่อนแชร์ทีม</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ข้อมูลเคยต้องดึงจากประมาณ 6 แหล่ง (&quot;half a dozen places&quot;)</li><li>3 skills: เตรียม review, proofread, จัดการ action items</li><li>scheduled task รันเย็นวันอาทิตย์ แล้ว Ian ใช้เช้าวันจันทร์</li><li>ผลลัพธ์ 2 ชิ้นต่อสัปดาห์: เอกสารเต็มสำหรับทีม + สไลด์เดียวสำหรับผู้บริหาร</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“Together, the skills capture the process so I can run it the same way each week and share the process with the team.”</p><p class='text-zinc-500'>skills เก็บกระบวนการไว้ ทำให้รันเหมือนเดิมทุกสัปดาห์และแชร์ให้ทีมได้</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“when something doesn&#x27;t line up, Claude flags it and asks questions instead of guessing”</p><p class='text-zinc-500'>เมื่อมีอะไรไม่ตรงกัน Claude จะ flag และถามคำถามแทนการเดา</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I drop in the week&#x27;s contacts, Claude verifies the data”</p><p class='text-zinc-500'>ผมใส่ context ของสัปดาห์ Claude ตรวจข้อมูลให้ (ASR เขียน contacts น่าจะเป็น context)</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>แปลงรายงานรายสัปดาห์เป็น skill แยกตามหน้าที่ (เตรียม, proofread, action items) แล้วรันซ้ำได้เหมือนเดิม</li><li>ให้ Claude flag และถามตอนข้อมูลขัดกัน ไม่ใช่เดาเอง คนเก็บอำนาจตัดสิน narrative ไว้</li><li>ทำตามลำดับ headlines ก่อน แล้วค่อยขยาย เพื่อล็อกสาระก่อนเติมรายละเอียด</li><li>ปิดทุกรอบด้วยคำถามว่าเรียนรู้อะไร แล้วเขียนกลับเข้า skill ให้กระบวนการดีขึ้นทุกสัปดาห์</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>Transcript เป็น YouTube auto-caption สะกด Cowork เป็น &quot;Co-work&quot; และ &quot;Claude code work&quot; ตอนท้าย ซึ่งน่าจะหมายถึง Claude Code หรือ Cowork ฟังไม่ชัดว่าหมายถึงอะไร</li><li>&quot;sauna task&quot; น่าจะเป็น Asana task (เดาจากบริบท) และ &quot;contacts&quot; น่าจะเป็น context ไม่ได้ยืนยัน</li><li>ไม่มีตัวเลขเวลาที่ประหยัดหรือผลลัพธ์เชิงปริมาณ ทั้งหมดเป็นการเล่าแบบเดโม</li><li>ผู้พูดแนะนำตัวเป็น Ian ในสายงาน marketing ops and analytics ไม่ได้ยินนามสกุลหรือชื่อบริษัท</li><li>คำอธิบายคลิประบุว่า Claude gathers and verifies numbers แต่ตัวคลิปไม่ได้แสดงวิธีที่ Claude verify นอกจากพูดว่า &quot;traces back to a verified data source&quot;</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=lsufr1i6ACY" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/02-claude-cowork-for-legal-teams.html" class="hover:underline">← #02 ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่นาที</a><a href="../talks/04-claude-cowork-for-sales.html" class="hover:underline ml-auto text-right">#04 AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประชุมในไม่กี่นาที →</a></nav>
+</main></body></html>

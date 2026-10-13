@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert… | Anthropic × Claude #05</title>
+<meta name="description" content="ทีม detection ของ Anthropic สร้าง CLUE แพลตฟอร์ม detection and response ด้วย Claude Code ที่ต่อกับ data warehouse, Slack และ code base ภายใน ให้ Claude…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/05-how-anthropic-uses-claude-in-cybersecurity.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert… | Anthropic × Claude #05">
+<meta property="og:description" content="ทีม detection ของ Anthropic สร้าง CLUE แพลตฟอร์ม detection and response ด้วย Claude Code ที่ต่อกับ data warehouse, Slack และ code base ภายใน ให้ Claude…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/05-how-anthropic-uses-claude-in-cybersecurity.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert… | Anthropic × Claude #05">
+<meta name="twitter:description" content="ทีม detection ของ Anthropic สร้าง CLUE แพลตฟอร์ม detection and response ด้วย Claude Code ที่ต่อกับ data warehouse, Slack และ code base ภายใน ให้ Claude…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert เหลือเป็นนาที — How Anthropic uses Claude #05", "description": "ทีม detection ของ Anthropic สร้าง CLUE แพลตฟอร์ม detection and response ด้วย Claude Code ที่ต่อกับ data warehouse, Slack และ code base ภายใน ให้ Claude…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/05-how-anthropic-uses-claude-in-cybersecurity.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/05-how-anthropic-uses-claude-in-cybersecurity.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "How Anthropic uses Claude in Cybersecurity", "url": "https://www.youtube.com/watch?v=FPPTnI88RR8", "duration": "PT3M42S"}, "about": ["security", "claude-code", "agents", "workflow-automation"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#05 ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert เหลือเป็นนาที", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/05-how-anthropic-uses-claude-in-cybersecurity.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#05 · How Anthropic uses Claude · 3:42</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert เหลือเป็นนาที</h1>
+<p class="mono text-xs text-zinc-500 mt-1">How Anthropic uses Claude in Cybersecurity</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Jackie Bow (Technical Lead, Detection Platform Engineering team ที่ Anthropic (ตามคำอธิบายคลิป))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> ทีม security operations / detection engineering ที่จมอยู่กับ alert และสลับหลายเครื่องมือ ไม่ต้องมีพื้นฐาน Claude Code มาก่อน</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">ทีม detection ของ Anthropic สร้าง CLUE แพลตฟอร์ม detection and response ด้วย Claude Code ที่ต่อกับ data warehouse, Slack และ code base ภายใน ให้ Claude วางแผนสืบสวน alert แล้วยิง query เอง ผู้พูดบอกว่างานที่เคยใช้หลายชั่วโมงถึงหลายวันเหลือเป็นนาที และ Claude Code ช่วยให้คนใหม่ทำ suppression engine เสร็จในสัปดาห์เดียว</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">Anthropic&#x27;s detection team built CLUE with Claude Code: an investigation platform wired to internal data, Slack and code that plans and runs alert investigations, and surfaces only what a human needs to review.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>ผู้พูดบอกว่าก่อนมี CLUE การสืบสวน security event ต้องสลับ 5-6 เครื่องมือ รัน query 3-4 ภาษาบนหลายฐานข้อมูล แค่เคสง่ายก็ใช้เวลาอย่างน้อยสองสามชั่วโมง นานสุดสองสามวัน</li><li>CLUE เป็นแพลตฟอร์ม detection and response ที่สร้างด้วย Claude Code ต่อกับระบบภายในผ่าน tool use เพื่อ query data warehouse ได้</li><li>นอกจากข้อมูลเชิงเทคนิค ยังค้นความรู้ภายในบริษัทได้ด้วย ทั้ง Slack message และ code base ซึ่งผู้พูดเรียกว่าชิ้นที่ขาดไป ทำให้ alert มี context ของสภาพแวดล้อมจริง</li><li>เดโมใช้ข้อมูลตัวอย่าง ไม่ใช่ข้อมูลภายในจริง: ถามว่า developer ให้สิทธิ์ admin ตัวเอง ได้รับอนุญาตไหม มี credential compromise ไหม และทำอะไรต่อบ้าง Claude ร่างแผนสืบสวน 6 ขั้นก่อน</li><li>Claude ยิง query ตามแผน สรุปว่าเข้าข่าย privilege escalation แบบคลาสสิก เจอว่า source IP เป็น data center ในรัสเซียที่ VirusTotal ติดธง malicious สรุปว่าเหตุการณ์น่าจะถูกจำกัดวง และชี้ช่องโหว่ใน security posture พร้อม action item</li><li>ผลสุดท้ายคือ investigation summary ที่รวมทุกขั้นที่ทำและสิ่งที่พบ ผู้พูดว่าเป้าหมายคือให้ผ่าน alert จำนวนมหาศาลได้แล้วยกเฉพาะเรื่องที่คนควรดู</li><li>ผู้พูดเล่าว่าแผนไตรมาส 4 ตั้งไว้ว่า suppression engine ใช้ 1-2 เดือน แต่พนักงานใหม่คนหนึ่งทำเสร็จในหนึ่งสัปดาห์ เพราะ Claude Code อธิบายได้ว่าระบบตั้งอย่างไร ทำงานอย่างไร</li><li>ผู้พูดมองว่าตัวเองขยับจาก practitioner ไปเป็นแนว researcher เพราะได้ทดลองวิธีประมวลข้อมูลปริมาณมหาศาลที่เคยแค่จินตนาการ</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>เปิด CLUE แล้วถามเป็นภาษาธรรมชาติ: developer ให้สิทธิ์ admin ตัวเอง ได้รับอนุญาตไหม ตรวจ credential compromise และสิ่งที่ทำหลังจากนั้น</li><li>Claude ร่างแผนสืบสวน 6 ขั้น</li><li>Claude ยิง query ผ่าน tool use ไปยังแหล่งข้อมูล แล้วรายงานข้อมูลที่ได้</li><li>Claude สรุป verdict เบื้องต้น (privilege escalation) พร้อมเหตุผล และยิง query เพิ่ม เช่น lookup source IP</li><li>ได้ investigation summary สุดท้าย: ขั้นที่ทำ ข้อค้นพบ และ action item เรื่องช่องโหว่</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>เครื่องมือ 5-6 ตัว และภาษา query 3-4 ภาษา ต่อการสืบสวนหนึ่งครั้งก่อนมี CLUE</li><li>เวลาสืบสวนแบบเดิม: อย่างน้อยสองสามชั่วโมง ถึงมากสุดสองสามวัน (กรณีง่าย)</li><li>แผนวางไว้ suppression engine ใช้ 1-2 เดือน แต่พนักงานใหม่ทำเสร็จใน 1 สัปดาห์</li><li>แผนสืบสวนที่ Claude ร่างในเดโมมี 6 ขั้น</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“This ability to go through immense amounts of data, immense amounts of alerts”</p><p class='text-zinc-500'>ความสามารถในการไล่ดูข้อมูลและ alert ปริมาณมหาศาล</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I&#x27;m building the tools that I wish that I had.”</p><p class='text-zinc-500'>ฉันกำลังสร้างเครื่องมือที่อยากให้มีมาตลอด</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“Most of it is because Claude Code is able to explain to”</p><p class='text-zinc-500'>ส่วนใหญ่เป็นเพราะ Claude Code อธิบายให้ได้ (ประโยคต่อว่าระบบตั้งอย่างไร)</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ให้ agent ต่อกับข้อมูลภายในที่เป็น context จริง ทั้ง data warehouse, Slack, code base ไม่ใช่แค่ log</li><li>ให้ Claude เขียนแผนสืบสวนก่อนลงมือ แล้วค่อยยิง query ตามแผน จะตรวจย้อนได้ง่าย</li><li>ออกแบบเครื่องมือให้ตรงกับงานของ analyst หน้างาน แทนที่จะให้ analyst ไปปรับตัวเข้ากับเครื่องมือ</li><li>ใช้ Claude Code เป็นตัวช่วย onboard คนใหม่เข้า code base ของระบบ detection</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ชื่อและตำแหน่งผู้พูดมาจากคำอธิบายคลิป ไม่ได้ยินแนะนำตัวใน transcript</li><li>transcript เป็น YouTube auto-caption ผู้พูดสะกด Claude Code เป็น cloud code ในต้นฉบับ แก้เป็น Claude Code ตามบริบท และ CLUE สะกดในเสียงเป็น Clue</li><li>เดโมใช้ข้อมูลตัวอย่าง ผู้พูดย้ำว่าไม่ใช่ข้อมูลภายในจริง</li><li>ตัวเลขเวลา (ชั่วโมงเป็นนาที, 1-2 เดือนเป็น 1 สัปดาห์) เป็นข้ออ้างของผู้พูด ไม่มีหลักฐานแนบในคลิป</li><li>คำอธิบายคลิปบอกว่าใช้ Claude Sonnet และ Opus แต่ผู้พูดไม่ได้พูดถึงโมเดลใน transcript</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=FPPTnI88RR8" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/04-claude-cowork-for-sales.html" class="hover:underline">← #04 AE ใช้ Cowork เตรียมประชุมลูกค้าครั้งแรกและสรุปงานหลังประชุมในไม่กี่นาที</a><a href="../talks/06-how-anthropic-uses-claude-in-product-engineer.html" class="hover:underline ml-auto text-right">#06 วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel renderer บนฝั่ง frontend →</a></nav>
+</main></body></html>

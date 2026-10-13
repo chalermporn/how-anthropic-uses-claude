@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้ว… | Anthropic × Claude #01</title>
+<meta name="description" content="Jared เล่าว่าตอนเป็น account executive ต้องดูแลลูกค้า 600-700 บัญชี ตอบอีเมลถึงสองสามทุ่มทุกวัน เลยสร้างเครื่องมือชื่อ Class (Claude Draft) ที่ใช้ Claude…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/01-how-anthropic-uses-claude-in-gtm-engineering.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้ว… | Anthropic × Claude #01">
+<meta property="og:description" content="Jared เล่าว่าตอนเป็น account executive ต้องดูแลลูกค้า 600-700 บัญชี ตอบอีเมลถึงสองสามทุ่มทุกวัน เลยสร้างเครื่องมือชื่อ Class (Claude Draft) ที่ใช้ Claude…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/01-how-anthropic-uses-claude-in-gtm-engineering.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้ว… | Anthropic × Claude #01">
+<meta name="twitter:description" content="Jared เล่าว่าตอนเป็น account executive ต้องดูแลลูกค้า 600-700 บัญชี ตอบอีเมลถึงสองสามทุ่มทุกวัน เลยสร้างเครื่องมือชื่อ Class (Claude Draft) ที่ใช้ Claude…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้วย Claude — How Anthropic uses Claude #01", "description": "Jared เล่าว่าตอนเป็น account executive ต้องดูแลลูกค้า 600-700 บัญชี ตอบอีเมลถึงสองสามทุ่มทุกวัน เลยสร้างเครื่องมือชื่อ Class (Claude Draft) ที่ใช้ Claude…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/01-how-anthropic-uses-claude-in-gtm-engineering.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/01-how-anthropic-uses-claude-in-gtm-engineering.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "How Anthropic uses Claude in GTM Engineering", "url": "https://www.youtube.com/watch?v=n4ZxEznNaIY", "duration": "PT2M23S"}, "about": ["gtm", "sales", "claude-code", "workflow-automation"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#01 จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้วย Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/01-how-anthropic-uses-claude-in-gtm-engineering.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#01 · How Anthropic uses Claude · 2:23</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้วย Claude</h1>
+<p class="mono text-xs text-zinc-500 mt-1">How Anthropic uses Claude in GTM Engineering</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Jared Sires (GTM Product Manager ที่ Anthropic (ตามคำอธิบายคลิป; ในเสียงพูดแนะนำแค่ชื่อ Jared และบอกว่าตัวเองเป็น go-to-market architect))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> ทีมขายหรือ GTM ที่อยากรู้ว่าคนไม่ใช่สายเทคนิคสร้างเครื่องมือภายในเองด้วย Claude ได้แค่ไหน ไม่ต้องมีพื้นฐานโค้ด</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Jared เล่าว่าตอนเป็น account executive ต้องดูแลลูกค้า 600-700 บัญชี ตอบอีเมลถึงสองสามทุ่มทุกวัน เลยสร้างเครื่องมือชื่อ Class (Claude Draft) ที่ใช้ Claude API ร่างอีเมลตอบลูกค้าให้ ผู้พูดบอกว่าประหยัดเวลาได้อย่างน้อย 2-3 ชั่วโมงต่อวัน และทำให้ย้ายสายงานมาเป็น go-to-market architect ได้</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">A former account executive with no coding background built Class (Claude Draft), a Claude API tool that drafts customer email replies from internal context. He says it saves 2-3 hours a day and changed his career.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>ผู้พูดเริ่มจากปัญหาจริง ตอนเป็น startup AE ดูแลราว 600-700 บัญชี ต้องค้น Slack, knowledge base, Google Docs, Google Drive แล้วตอบอีเมลจนถึง 2-3 ทุ่ม</li><li>คำถามตั้งต้นคือ จะดึง Claude เข้ามาอยู่ใน loop ได้อย่างไร จึงพัฒนา Class ซึ่งย่อมาจาก Claude Draft</li><li>Class จัดการ inbox โดยต่อกับ context knowledge, system prompt และ pattern matching</li><li>ขั้นแรกคือสร้าง system prompt ใส่ชื่อ ตำแหน่ง (เลือกจาก drop-down เช่น account executive) และสิ่งที่ช่วยลูกค้า แล้วกด generate prompt เบื้องหลังใช้ Claude API</li><li>ขั้นต่อมาคือดึง context ผ่าน integration กับ Google Docs และดึง URL เว็บได้ด้วย เช่นหน้า doc ของ Claude แล้วเปิดอีเมลกด generate draft</li><li>Claude ไปดึงข้อมูลจากเว็บไซต์ เอกสาร และ context ภายใน ทำให้ตอบลูกค้าเชิงเทคนิคได้ โดยไม่ต้องไล่หาใน Slack หรือ Google Docs เอง</li><li>ผู้พูดบอกว่าประหยัดเวลาอย่างน้อย 2-3 ชั่วโมงต่อวัน และมีอีเมลหลายพันฉบับที่ส่งผ่านระบบนี้</li><li>พอกำแพงทางเทคนิคลดลง เขาออกแบบผลิตภัณฑ์ได้มากขึ้นแล้วให้ senior engineer ช่วยปิดท้าย และย้ายมาเป็น go-to-market architect</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>เปิด Class แล้วสร้าง system prompt: ใส่ชื่อ เลือกตำแหน่งจาก drop-down (account executive) ใส่สิ่งที่ช่วยลูกค้า แล้วกด generate prompt</li><li>ตั้งค่า context retrieval ผ่าน integration กับ Google Docs (ดึง URL เว็บได้ด้วย) แล้วเพิ่ม doc</li><li>เปิดอีเมลที่ต้องตอบ แล้วกด generate draft</li><li>Claude ดึงข้อมูลจากเว็บไซต์ เอกสาร และ context ภายใน มาร่างคำตอบ</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ดูแลบัญชีลูกค้าประมาณ 600-700 บัญชีตอนท้ายๆ ที่เป็น startup AE</li><li>ทำงานถึงประมาณ 2-3 ทุ่ม (8:00-9:00 pm) เพื่อตอบอีเมล</li><li>ประหยัดเวลาอย่างน้อย 2-3 ชั่วโมงต่อวัน (ผู้พูดประเมินเอง)</li><li>มีอีเมล &quot;หลายพันฉบับ&quot; ที่ส่งผ่านระบบ Class (ผู้พูดบอก ไม่ได้ให้ตัวเลขแน่ชัด)</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I would say Class is saving probably me at least 2-3 hours a day for answering emails”</p><p class='text-zinc-500'>Class ช่วยประหยัดเวลาตอบอีเมลอย่างน้อย 2-3 ชั่วโมงต่อวัน</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I don&#x27;t have to go over Slack. I don&#x27;t have to go over Google Docs to figure out how I need to respond.”</p><p class='text-zinc-500'>ไม่ต้องไล่หาใน Slack หรือ Google Docs เพื่อรู้ว่าจะตอบอย่างไร</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I feel like with the technical barrier dissolving, I&#x27;m almost able to design more products and have senior engineers help me implement this to the final”</p><p class='text-zinc-500'>พอกำแพงเทคนิคหายไป เขาออกแบบผลิตภัณฑ์ได้มากขึ้นและให้ senior engineer ช่วยทำช่วงสุดท้าย</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>เริ่มจากงานที่กินเวลาจริงของตัวเอง (ตอบอีเมลซ้ำๆ) แล้วถามว่าจะเอา Claude เข้ามาใน loop ตรงไหน</li><li>เครื่องมือแบบนี้มีแค่สามส่วน คือ system prompt ที่บอกบทบาท, แหล่ง context (Docs, เว็บ), และ pattern matching กับอีเมลที่เข้ามา</li><li>คนสายขายสร้างต้นแบบเองได้ แล้วให้ senior engineer ช่วยปิดงานช่วงท้าย ไม่ต้องรอทีม engineering ตั้งแต่ต้น</li><li>ให้เอกสารและความรู้ภายในอยู่ในจุดที่ Claude เข้าถึงได้ จะได้ไม่ต้องไล่หาข้ามหลายระบบทุกครั้ง</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>Transcript เป็น YouTube auto-caption ASR เขียน &quot;Class&quot; และ &quot;Claude Draft&quot; ส่วนคำอธิบายคลิปเขียนว่า CLAFTS (Claude Drafts) จึงเรียกเครื่องมือว่า Class/CLAFTS ตามที่ปรากฏ ไม่ชัดว่าชื่อสะกดทางการคืออะไร</li><li>Transcript ออกเสียง Claude เป็น &quot;Class&quot; ในบางจุด ส่วนนามสกุลและตำแหน่ง GTM Product Manager มาจากคำอธิบายคลิป ไม่ได้ยินในเสียงพูด (เสียงพูดบอกแค่ Jared และ go-to-market architect)</li><li>ตัวเลขเวลาที่ประหยัดและจำนวนอีเมลเป็นการประเมินของผู้พูดเอง ไม่มีข้อมูลยืนยัน</li><li>คลิปสั้น (2:23) เป็นเดโมระดับภาพรวม ไม่ได้ลงรายละเอียดวิธีสร้างด้วย Claude Code</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=n4ZxEznNaIY" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/02-claude-cowork-for-legal-teams.html" class="hover:underline ml-auto text-right">#02 ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่นาที →</a></nav>
+</main></body></html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel… | Anthropic × Claude #06</title>
+<meta name="description" content="Chuma Kabaghe เป็น backend engineer ที่ใช้ Claude Code ทำความเข้าใจ codebase frontend ที่ไม่คุ้น แล้วต่อ Playwright MCP ให้ Claude เปิดแอปดูผล แก้…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/06-how-anthropic-uses-claude-in-product-engineer.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel… | Anthropic × Claude #06">
+<meta property="og:description" content="Chuma Kabaghe เป็น backend engineer ที่ใช้ Claude Code ทำความเข้าใจ codebase frontend ที่ไม่คุ้น แล้วต่อ Playwright MCP ให้ Claude เปิดแอปดูผล แก้…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/06-how-anthropic-uses-claude-in-product-engineer.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel… | Anthropic × Claude #06">
+<meta name="twitter:description" content="Chuma Kabaghe เป็น backend engineer ที่ใช้ Claude Code ทำความเข้าใจ codebase frontend ที่ไม่คุ้น แล้วต่อ Playwright MCP ให้ Claude เปิดแอปดูผล แก้…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel renderer บนฝั่ง frontend — How Anthropic uses Claude ", "description": "Chuma Kabaghe เป็น backend engineer ที่ใช้ Claude Code ทำความเข้าใจ codebase frontend ที่ไม่คุ้น แล้วต่อ Playwright MCP ให้ Claude เปิดแอปดูผล แก้…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/06-how-anthropic-uses-claude-in-product-engineer.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/06-how-anthropic-uses-claude-in-product-engineer.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "How Anthropic uses Claude in Product Engineering", "url": "https://www.youtube.com/watch?v=ma7oe_5h0ag", "duration": "PT2M57S"}, "about": ["product-engineering", "claude-code", "workflow-automation"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#06 วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel renderer บนฝั่ง frontend", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/06-how-anthropic-uses-claude-in-product-engineer.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#06 · How Anthropic uses Claude · 2:57</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel renderer บนฝั่ง frontend</h1>
+<p class="mono text-xs text-zinc-500 mt-1">How Anthropic uses Claude in Product Engineering</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Chuma Kabaghe (Software Engineer ที่ Anthropic (ตามคำอธิบายคลิป))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> วิศวกรที่ต้องเข้า codebase ใหม่หรือข้ามสาย backend/frontend รู้จัก Claude Code และ MCP ระดับพื้นฐานก็พอ</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Chuma Kabaghe เป็น backend engineer ที่ใช้ Claude Code ทำความเข้าใจ codebase frontend ที่ไม่คุ้น แล้วต่อ Playwright MCP ให้ Claude เปิดแอปดูผล แก้ และวนทดสอบเอง เดโมทำฟีเจอร์ preview ไฟล์ Excel, CSV, TSV ใน Claude.ai เธอบอกว่าเวลาที่เหลือเอาไปคิดระดับระบบและ trade-off มากขึ้น</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">A backend engineer uses Claude Code plus the Playwright MCP to onboard onto a frontend codebase and build an Excel preview feature in an autonomous edit-and-verify loop.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>ผู้พูดเปรียบ Claude Code เป็นเหมือนส่ง sidekick ไปหาข้อมูล แล้วกลับมารายงาน</li><li>ตอนเข้า Anthropic ทีมทำ code execution และ file generation ใน Claude.ai (ให้ Claude มีคอมพิวเตอร์และสร้างไฟล์ รวมถึง Excel) มี deadline ประมาณหนึ่งเดือนครึ่ง</li><li>เธอเป็น backend engineer แต่งานนี้เป็น frontend ปกติ onboard ใช้เวลานาน ใช้ Claude Code วางพื้นฐานใน codebase ได้เร็วกว่า</li><li>จุดที่เธอว่าเจ๋งสุดคือการต่อ Claude Code กับ Playwright MCP</li><li>เดโม: ให้อ่าน EXCEL_RENDERER_DESIGN.md (design doc/spec) แล้วทำฟีเจอร์ preview Excel, CSV, TSV ด้วย Playwright MCP โดย Claude เปิดแอปดูสภาพก่อนทำ แล้วขออนุญาตแก้ไฟล์</li><li>หลังอนุญาต Claude วนลูปกับ Playwright แก้ ตรวจ และวนต่อ จนได้สรุปการเปลี่ยนแปลงให้รีวิวโค้ด</li><li>ผู้พูดยังได้เขียนโค้ดและสร้างของอยู่ แต่มีเวลาคิดภาพรวมระบบ กลยุทธ์ trade-off การเชื่อมกับทีมอื่น และงานด้านคน</li><li>Claude Code ทำให้เธอฝันใหญ่ขึ้น เพราะไม่ถูกจำกัดด้วยภาษาที่ถนัดอีกต่อไป</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>ใส่ prompt: ให้ implement ฟีเจอร์ Excel renderer สำหรับ Claude.ai อ่าน EXCEL_RENDERER_DESIGN.md และใช้ Playwright MCP โดยฟีเจอร์ต้อง preview Excel, CSV, TSV ได้</li><li>Claude Code อ่าน codebase และสตาร์ตแอป Claude.ai ผ่าน Playwright MCP เพื่อดูสภาพก่อนทำฟีเจอร์</li><li>Claude ขออนุญาตแก้ไฟล์ ผู้พูดกดอนุญาต</li><li>Claude วนลูปกับ Playwright: แก้โค้ด ตรวจผล ปรับต่อ</li><li>ได้สรุปการเปลี่ยนแปลงทั้งหมด พร้อมให้ผู้พูดรีวิวโค้ด</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>deadline ที่ทีมตั้งไว้สำหรับฟีเจอร์ code execution และ file generation: ราวหนึ่งเดือนครึ่ง</li><li>ไฟล์ที่ฟีเจอร์ preview รองรับในเดโม: Excel, CSV, TSV</li><li>ไฟล์ design doc ในเดโมชื่อ EXCEL_RENDERER_DESIGN.md</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“Claude Code has helped me dream bigger.”</p><p class='text-zinc-500'>Claude Code ช่วยให้ฉันฝันใหญ่ขึ้น</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I still get to do what I love. I still get to write code.”</p><p class='text-zinc-500'>ฉันยังได้ทำสิ่งที่รัก ยังได้เขียนโค้ดอยู่</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“One of the coolest things about Claude Code so far in my work was when I realized I could hook it up to the Playwright MCP.”</p><p class='text-zinc-500'>สิ่งที่เจ๋งที่สุดคือตอนรู้ว่าต่อกับ Playwright MCP ได้</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ให้ Claude Code อ่าน codebase ที่ไม่คุ้นก่อนลงมือ เป็นวิธี onboard ที่เร็วกว่าอ่านเอง</li><li>เขียน design doc/spec แล้วชี้ให้ Claude อ่านใน prompt</li><li>ต่อ Playwright MCP ให้ Claude เห็นผลลัพธ์จริงของ UI และตรวจงานตัวเองเป็นลูป</li><li>ยังต้องรีวิวโค้ดที่ได้เอง แล้วใช้เวลาที่เหลือกับการตัดสินใจระดับสูง</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ชื่อและตำแหน่งผู้พูดมาจากคำอธิบายคลิป ไม่มีการแนะนำตัวใน transcript</li><li>transcript เป็น auto-caption ไม่แยกผู้พูด ท้ายคลิปมีบทสนทนาสั้นๆ (it&#x27;s absolutely ridiculous / mind-blowing) ที่อาจเป็นผู้พูดคนเดียวกันหรือคนอื่น</li><li>ไม่ได้บอกตัวเลขผลลัพธ์เชิงปริมาณว่าเร็วขึ้นเท่าไร และไม่ได้ยืนยันว่าส่งฟีเจอร์ทันกำหนด</li><li>ไม่ได้พูดถึงโมเดลหรือเวอร์ชันที่ใช้</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=ma7oe_5h0ag" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/05-how-anthropic-uses-claude-in-cybersecurity.html" class="hover:underline">← #05 ทีม security ใช้ Claude Code สร้าง CLUE ให้ triage alert เหลือเป็นนาที</a><a href="../talks/07-how-anthropic-uses-claude-in-product-manageme.html" class="hover:underline ml-auto text-right">#07 PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย test case ของ evals โดยไม่ต้องเขียน SQL →</a></nav>
+</main></body></html>

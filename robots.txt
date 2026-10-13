@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml

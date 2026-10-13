@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย… | Anthropic × Claude #07</title>
+<meta name="description" content="Lisa Crofoot เล่าว่า PM ที่ Anthropic ใช้ Claude Code ต่อกับ BigQuery MCP ที่ทีม data science ตั้งไว้…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/07-how-anthropic-uses-claude-in-product-manageme.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย… | Anthropic × Claude #07">
+<meta property="og:description" content="Lisa Crofoot เล่าว่า PM ที่ Anthropic ใช้ Claude Code ต่อกับ BigQuery MCP ที่ทีม data science ตั้งไว้…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/07-how-anthropic-uses-claude-in-product-manageme.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย… | Anthropic × Claude #07">
+<meta name="twitter:description" content="Lisa Crofoot เล่าว่า PM ที่ Anthropic ใช้ Claude Code ต่อกับ BigQuery MCP ที่ทีม data science ตั้งไว้…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย test case ของ evals โดยไม่ต้องเขียน SQL — How Anthropic ", "description": "Lisa Crofoot เล่าว่า PM ที่ Anthropic ใช้ Claude Code ต่อกับ BigQuery MCP ที่ทีม data science ตั้งไว้…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/07-how-anthropic-uses-claude-in-product-manageme.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/07-how-anthropic-uses-claude-in-product-manageme.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "How Anthropic uses Claude in Product Management", "url": "https://www.youtube.com/watch?v=91AJ0cpgLlQ", "duration": "PT2M57S"}, "about": ["product-management", "claude-code", "workflow-automation"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#07 PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย test case ของ evals โดยไม่ต้องเขียน SQL", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/07-how-anthropic-uses-claude-in-product-manageme.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#07 · How Anthropic uses Claude · 2:57</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">PM ใช้ Claude Code ดึงข้อมูลผ่าน BigQuery MCP และขยาย test case ของ evals โดยไม่ต้องเขียน SQL</h1>
+<p class="mono text-xs text-zinc-500 mt-1">How Anthropic uses Claude in Product Management</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Lisa Crofoot (Product Manager ที่ Anthropic (ตามคำอธิบายคลิป))</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> Product manager ที่ต้องรอ data science ทุกครั้งที่อยากได้ตัวเลข ไม่ต้องรู้ SQL</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Lisa Crofoot เล่าว่า PM ที่ Anthropic ใช้ Claude Code ต่อกับ BigQuery MCP ที่ทีม data science ตั้งไว้ เพื่อถามข้อมูลผลิตภัณฑ์และทำกราฟได้เองโดยไม่ต้องเขียน SQL อีกด้านคือให้ Claude ขยาย test case สำหรับ evals จากตัวอย่างไม่กี่อันเป็นราว 50 อัน เป้าหมายคือให้ PM มีเวลากับกลยุทธ์ การคุยลูกค้า และการตัดสินใจมากขึ้น</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">PMs use Claude Code with a BigQuery MCP to query product data and chart it without SQL, and to expand a few eval examples into about 50, freeing time for strategy and decisions.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>ผู้พูดบอกว่า PM ตอนนี้ทดสอบไอเดียกับ Claude ก่อนดึงคนอื่นเข้ามา ทำให้ iterate เร็วและทำงานได้อิสระขึ้น</li><li>ปัญหาเดิมคือต้อง ping คน data science หรือเขียน SQL พื้นฐานเองบนฐานข้อมูลที่ไม่ค่อยรู้จัก</li><li>ทีม data science ตั้ง BigQuery MCP เชื่อมตารางข้อมูลผลิตภัณฑ์ทั้งหมดเข้า Claude Code ผู้ใช้แค่ตีความข้อมูลและผลลัพธ์ ไม่ต้องเขียน SQL</li><li>เดโมใช้ข้อมูลสังเคราะห์ที่ Claude สร้าง เรื่องสัดส่วนการใช้ dark mode เทียบ light mode ย้อนหลัง 3 เดือน โดยระบุตารางให้ Claude</li><li>Claude เปิดกราฟพร้อมของที่ไม่ได้สั่ง เช่น 7-day rolling average และค่าเฉลี่ยรวม ผู้พูดว่าสวยกว่าที่ทำเอง จากนั้นสั่งแตกกราฟตาม plan type ได้ต่อ</li><li>ผู้พูดประเมินว่าถ้าทำเองอาจใช้หลายชั่วโมงหรือมากกว่า</li><li>อีกการใช้งานคือสร้าง evals: ให้สถานการณ์ ประสบการณ์ผลิตภัณฑ์ที่ต้องการ กับตัวอย่าง test case สองสามอัน แล้วให้ Claude ขยายเป็นราว 50 อัน</li><li>ผู้พูดมองว่าเป็นมากกว่า automation คือทำสิ่งที่เดิมทำเองไม่ได้ เป็นการขยายความสามารถของตัวเอง</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>ทีม data science ตั้ง BigQuery MCP เชื่อมตารางข้อมูลผลิตภัณฑ์เข้ากับ Claude Code</li><li>สร้างข้อมูลสังเคราะห์ light/dark mode usage สำหรับเดโม</li><li>สั่งใน Claude Code ให้ดูสัดส่วน dark mode ย้อนหลัง 3 เดือน พร้อมระบุตารางที่ใช้</li><li>Claude เปิดกราฟ (มี 7-day rolling average และค่าเฉลี่ยรวมเพิ่มเอง)</li><li>สั่งแตกกราฟตาม plan type; Claude ขออนุญาตแก้ไฟล์ ผู้พูดอนุญาต แล้วได้กราฟใหม่</li><li>สำหรับ evals: ให้สถานการณ์ + ตัวอย่าง test case แล้วให้ Claude ขยายชุด test case</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ข้อมูลเดโม: สัดส่วน dark mode ย้อนหลัง 3 เดือน (ข้อมูลสังเคราะห์)</li><li>ตัวอย่าง test case: จาก 1-2 อัน ขยายเป็นราว 50 อันสำหรับ evals</li><li>กราฟที่ Claude เพิ่มเอง: 7-day rolling average และค่าเฉลี่ยรวม</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I can use Claude to test my product ideas before I even get anyone else in the loop.”</p><p class='text-zinc-500'>ใช้ Claude ทดสอบไอเดียผลิตภัณฑ์ก่อนดึงใครเข้ามาเกี่ยวด้วยซ้ำ</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“You just need to be a human interpreter of that data and that result.”</p><p class='text-zinc-500'>แค่เป็นมนุษย์ที่ตีความข้อมูลและผลลัพธ์นั้นก็พอ</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“So, really quickly you go from one or two examples to test to like 50”</p><p class='text-zinc-500'>จากตัวอย่าง 1-2 อัน กลายเป็นราว 50 อันอย่างรวดเร็ว</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ให้ทีม data ตั้ง MCP ต่อตารางที่ปลอดภัยให้ PM ใช้ แล้ว PM ถามเป็นภาษาธรรมชาติได้</li><li>ระบุชื่อตารางให้ชัดเวลาสั่ง และตรวจผลที่ตีความเองเสมอ</li><li>ให้ Claude ขยายชุด test case ของ evals จากตัวอย่างจริงไม่กี่อัน</li><li>เอาเวลาที่ประหยัดไปใช้กับกลยุทธ์และการคุยลูกค้า</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ชื่อและตำแหน่งผู้พูดมาจากคำอธิบายคลิป ไม่ได้ยินแนะนำตัวใน transcript</li><li>ใน auto-caption คำว่า evals ถูกสะกดเป็น e-bells ซ้ำสองครั้ง แก้เป็น evals ตามบริบท (evaluate AI systems)</li><li>เดโมใช้ข้อมูลสังเคราะห์ ไม่ใช่ข้อมูลผลิตภัณฑ์จริง</li><li>ไม่ได้บอกตัวเลขวัดผลเชิงปริมาณ ข้ออ้างเรื่องเร็วขึ้นเป็นความเห็นของผู้พูด</li><li>คำอธิบายคลิปพูดถึงการสร้าง evals &#x27;ในไม่กี่นาที&#x27; ซึ่งผู้พูดไม่ได้ระบุเวลาชัดใน transcript</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=91AJ0cpgLlQ" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/06-how-anthropic-uses-claude-in-product-engineer.html" class="hover:underline">← #06 วิศวกร backend ใช้ Claude Code + Playwright MCP ทำ Excel renderer บนฝั่ง frontend</a><a href="../talks/08-how-anthropic-uses-claude-in-marketing.html" class="hover:underline ml-auto text-right">#08 นักการตลาดที่ไม่เคยเขียนโค้ด ใช้ Claude Code สร้าง Figma plugin สร้างโฆษณาหลายแบบใน 30 วินาที →</a></nav>
+</main></body></html>

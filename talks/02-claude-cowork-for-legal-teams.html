@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="th" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่… | Anthropic × Claude #02</title>
+<meta name="description" content="Mark ทนายความฝั่งผลิตภัณฑ์ของ Anthropic ตั้ง Claude Cowork ให้รันงานตอนเช้า แล้วใช้ skill /brief ดึง review เก่า กับ thread ใหม่ใน Slack และ Gmail…">
+<link rel="canonical" href="https://chalermporn.github.io/how-anthropic-uses-claude/talks/02-claude-cowork-for-legal-teams.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#D97757">
+<meta property="og:site_name" content="How Anthropic uses Claude — สรุปไทยทั้งเพลย์ลิสต์">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่… | Anthropic × Claude #02">
+<meta property="og:description" content="Mark ทนายความฝั่งผลิตภัณฑ์ของ Anthropic ตั้ง Claude Cowork ให้รันงานตอนเช้า แล้วใช้ skill /brief ดึง review เก่า กับ thread ใหม่ใน Slack และ Gmail…">
+<meta property="og:url" content="https://chalermporn.github.io/how-anthropic-uses-claude/talks/02-claude-cowork-for-legal-teams.html">
+<meta property="og:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่… | Anthropic × Claude #02">
+<meta name="twitter:description" content="Mark ทนายความฝั่งผลิตภัณฑ์ของ Anthropic ตั้ง Claude Cowork ให้รันงานตอนเช้า แล้วใช้ skill /brief ดึง review เก่า กับ thread ใหม่ใน Slack และ Gmail…">
+<meta name="twitter:image" content="https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png">
+<link rel="sitemap" type="application/xml" href="https://chalermporn.github.io/how-anthropic-uses-claude/sitemap.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่นาที — How Anthropic uses Claude #02", "description": "Mark ทนายความฝั่งผลิตภัณฑ์ของ Anthropic ตั้ง Claude Cowork ให้รันงานตอนเช้า แล้วใช้ skill /brief ดึง review เก่า กับ thread ใหม่ใน Slack และ Gmail…", "inLanguage": "th", "url": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/02-claude-cowork-for-legal-teams.html", "mainEntityOfPage": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/02-claude-cowork-for-legal-teams.html", "image": "https://chalermporn.github.io/how-anthropic-uses-claude/og-image.png", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "author": {"@type": "Person", "name": "chalermporn", "url": "https://github.com/chalermporn"}, "isBasedOn": {"@type": "VideoObject", "name": "Claude Cowork for legal teams", "url": "https://www.youtube.com/watch?v=EPUg9pmfPk0", "duration": "PT2M59S"}, "about": ["legal", "cowork", "workflow-automation", "team-practice"]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "How Anthropic uses Claude", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/"}, {"@type": "ListItem", "position": 2, "name": "#02 ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่นาที", "item": "https://chalermporn.github.io/how-anthropic-uses-claude/talks/02-claude-cowork-for-legal-teams.html"}]}]</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D97757'/%3E%3Cpath d='M16 6l2.2 7.8L26 16l-7.8 2.2L16 26l-2.2-7.8L6 16l7.8-2.2z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.4"></script>
+<script>try{var _th=localStorage.getItem('theme');if(_th==='dark'||(!_th&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+<style type="text/tailwindcss">
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-clay-50:#fdf4ef; --color-clay-100:#fbe5d9; --color-clay-200:#f6c8b1; --color-clay-300:#efa585;
+  --color-clay-400:#e68360; --color-clay-500:#d97757; --color-clay-600:#c25f3f; --color-clay-700:#a24a31;
+  --color-clay-800:#843f2d; --color-clay-900:#6c3727;
+}
+body{font-family:var(--font-sans)}
+.mono{font-family:var(--font-mono)}
+.dark .text-zinc-500{color:var(--color-zinc-400)}
+dialog::backdrop{background:rgba(10,10,12,.6);backdrop-filter:blur(3px)}
+@media print{
+  header,.noprint,footer .noprint{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card{break-inside:avoid}
+  dialog{display:none!important}
+}
+</style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+<header class="border-b border-zinc-200 dark:border-zinc-800"><div class="mx-auto max-w-3xl px-4 h-14 flex items-center gap-4 text-sm">
+<a href="../index.html" class="font-semibold">How Anthropic uses Claude</a>
+<a href="../index.html" class="ml-2 hover:underline">ทุกคลิป</a><a href="../summary.html" class="hover:underline">สรุปรวม</a>
+<button onclick="var d=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',d?'dark':'light')}catch(e){}" class="ml-auto px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-700 text-xs" aria-label="สลับธีม">ธีม</button></div></header>
+<main class="mx-auto max-w-3xl px-4 py-10 leading-relaxed">
+<p class="mono text-xs text-clay-700 dark:text-clay-300">#02 · Claude Cowork · 2:59</p>
+<h1 class="mt-2 text-3xl font-bold leading-snug">ทนายความ in-house ใช้ Cowork ไล่ตามบริบทเก่าให้ทันในไม่กี่นาที</h1>
+<p class="mono text-xs text-zinc-500 mt-1">Claude Cowork for legal teams</p>
+<p class="mt-4 text-sm"><b>ผู้พูด:</b> Mark (in-house product lawyer ที่ Anthropic)</p>
+<p class="text-sm mt-1 text-zinc-600 dark:text-zinc-400"><b>เหมาะกับ:</b> ทีมกฎหมายหรือคนทำงานความรู้ที่ต้องกลับมาตอบคำถามเรื่องเก่าเร็วๆ ไม่ต้องมีพื้นฐานเทคนิค</p>
+<p class="mt-5 rounded-xl bg-clay-50 dark:bg-clay-900/25 border border-clay-200 dark:border-clay-800 p-4">Mark ทนายความฝั่งผลิตภัณฑ์ของ Anthropic ตั้ง Claude Cowork ให้รันงานตอนเช้า แล้วใช้ skill /brief ดึง review เก่า กับ thread ใหม่ใน Slack และ Gmail มาสรุปเป็น brief สั้นๆ ที่ชี้ว่าอะไรเปลี่ยน ทุกข้อเช็กกลับไปที่ต้นฉบับได้ก่อนส่งคำตอบ โดยยังมีคนอนุมัติทุกขั้น</p>
+<p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" lang="en">An in-house product lawyer schedules Cowork to prep his day, then runs the /brief skill to turn an old review plus new Slack and Gmail threads into a short, source-verifiable brief, keeping a human in the loop.</p>
+<h2 class="mt-8 text-lg font-semibold">ประเด็นสำคัญ</h2><ol class="list-decimal pl-6 mt-2 space-y-2"><li>สถานการณ์คือ PM ส่ง Slack มาถามเรื่องฟีเจอร์ที่เปิดตัวเมื่อไม่กี่เดือนก่อน แต่ Mark มีเวลาไม่กี่นาทีและจำบริบทของ memo เดิมไม่ได้แล้ว</li><li>เมื่อก่อนต้องใช้ชั่วโมงแรกของวันอ่านงานตัวเองซ้ำ หาไฟล์ brief เก่า และไล่ว่าอะไรเปลี่ยน กว่าจะเริ่มคิดคำถามจริง</li><li>Cowork ตั้ง scheduled task ให้รันตอนเช้า เหมือนมี chief of staff ส่ง memo ว่ามีอะไรในจาน อะไรใหม่ อะไรด่วน โดยต่อกับ Gmail</li><li>ตัวอย่างวันนั้นมี 5 รายการเรียงตามกำหนด: 2 งานประจำ 1 งานใหม่ และ 1 รายการติดตามคำขอจาก PM</li><li>skill ที่ใช้บ่อยที่สุดคือ /brief ใช้ตอนต้องตามให้ทันเรื่องผลิตภัณฑ์หนึ่งๆ ผู้พูดบอกว่าช่วยสร้าง plugin นี้ตามวิธีทำงานของฝ่ายกฎหมายของ Anthropic เอง</li><li>skill รู้อยู่แล้วว่าไฟล์ review อยู่โฟลเดอร์ไหนและ template โครงสร้างอย่างไร prompt เลยสั้น แค่พิมพ์ /brief แล้วระบุผลิตภัณฑ์กับการเปลี่ยนแปลง Claude ดึง review จากโฟลเดอร์ อ่าน thread ใหม่ใน Slack กับ Gmail แล้วสรุป</li><li>brief ตอบสามเรื่อง: ตอนนั้นสรุปว่าอะไร อะไรกำลังเปลี่ยน และกระทบส่วนไหนของการวิเคราะห์ ชี้ไปที่ 3 ย่อหน้าที่เกี่ยวข้อง ไม่ต้องอ่าน memo 40 หน้า</li><li>Mark คลิกไปดูย่อหน้าเดิมที่ brief อ้าง เจอข้อความ verbatim เพราะชื่อเขาอยู่บนคำตอบ จึงต้อง trust but verify และคง human in the loop จากนั้นให้ Claude ร่างคำตอบถึงทีมผลิตภัณฑ์ (Claude ขออนุมัติก่อน) และปิด ticket ใน Jira เพื่อให้ทีมอื่นมี context และสร้างคลังความรู้ที่คนในฝ่ายกฎหมายเข้าถึงได้ แทนการเก็บเป็น silo</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ลำดับขั้นที่ทำในคลิป</h2><ol class="list-decimal pl-6 mt-2 space-y-1.5"><li>ตั้ง scheduled task ใน Claude Cowork ให้รันตอนเช้า ต่อกับ Gmail เพื่อได้ memo สรุปงานของวัน</li><li>เลือกรายการที่เป็นคำขอจาก PM ในรายการงานของวัน</li><li>พิมพ์ /brief แล้วระบุผลิตภัณฑ์และการเปลี่ยนแปลงที่ต้องการรู้</li><li>Claude ดึง review เดิมจากโฟลเดอร์ อ่าน thread ใหม่ใน Slack และ Gmail แล้วคืน brief (ข้อสรุปเดิม สิ่งที่เปลี่ยน ส่วนที่กระทบ)</li><li>คลิกไปดูย่อหน้าต้นฉบับที่ brief อ้างถึง เช็กว่าตรง verbatim</li><li>ให้ Claude ร่างคำตอบถึงทีมผลิตภัณฑ์ แล้วกดอนุมัติ</li><li>ให้ Claude ปิด ticket ใน Jira เพื่อเก็บ context ให้ทีม</li></ol>
+<h2 class="mt-8 text-lg font-semibold">ตัวเลข / ข้อเท็จจริงที่ผู้พูดบอก</h2><p class="text-xs text-zinc-500">ตามที่ผู้พูดอ้างในคลิป ไม่ได้ยืนยันกับแหล่งอื่น</p><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>รายการงานเช้านั้น 5 รายการ: 2 routine, 1 ใหม่, 1 follow-up ของ PM (ตามที่ผู้พูดบอก ตัวเลขรวมกับที่นับได้ไม่ตรงกัน ดู caveats)</li><li>memo ที่ไม่ต้องอ่านทั้งฉบับ ยาวประมาณ 40 หน้า เหลือแค่ 3 ย่อหน้าที่เกี่ยวข้อง</li><li>Jira ใช้ติดตาม ticket ของฝ่ายกฎหมาย Anthropic และให้ Claude ปิด ticket ได้</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ประโยคเด่น (ต้นฉบับ)</h2><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“It&#x27;s like having a personalized chief of staff that delivers a memo for me each day about what&#x27;s on my plate, what&#x27;s new, and what&#x27;s urgent.”</p><p class='text-zinc-500'>เหมือนมี chief of staff ส่วนตัวที่ส่ง memo ทุกวันว่ามีอะไรบนโต๊ะ อะไรใหม่ อะไรด่วน</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I&#x27;m not reading a 40-page memo to find three paragraphs.”</p><p class='text-zinc-500'>ไม่ต้องอ่าน memo 40 หน้าเพื่อหาแค่สามย่อหน้า</p></blockquote><blockquote class='border-l-4 border-clay-400 pl-4 my-3'><p class='italic'>“I&#x27;m checking because my name goes on the reply, and trust but verify is pretty much the whole job.”</p><p class='text-zinc-500'>ที่ต้องเช็กเพราะชื่อเราอยู่บนคำตอบ และ trust but verify คืองานแทบทั้งหมด</p></blockquote>
+<h2 class="mt-8 text-lg font-semibold">สิ่งที่นำไปทำต่อ</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>ตั้ง scheduled task ให้ Cowork เตรียม memo ประจำวัน เป็นจุดเริ่มที่เบาและเห็นผลเร็ว</li><li>ทำ skill ที่รู้ที่เก็บเอกสารและ template ของทีม prompt จะสั้นลงมาก เพราะ context อยู่ใน skill แล้ว</li><li>ให้ output ชี้กลับไปยังต้นฉบับ เพื่อคลิกตรวจ verbatim ได้ก่อนลงชื่อ นี่คือรูปแบบ human in the loop ที่ผู้พูดเน้น</li><li>ปิดงานด้วยการอัปเดต ticket ให้ความรู้สะสมเป็นคลังกลางของทีม แทนที่จะอยู่ในหัวคนเดียว</li></ul>
+<h2 class="mt-8 text-lg font-semibold">ข้อควรระวังในสรุปนี้</h2><ul class="list-disc pl-6 mt-2 space-y-1.5"><li>Transcript เป็น YouTube auto-caption สะกด Cowork เป็น &quot;Co-work&quot; ในบางจุด ชื่อ Mark และตำแหน่ง in-house product lawyer ได้ยินในเสียงพูดตรงๆ</li><li>ผู้พูดบอกว่ามี 5 รายการ แต่ที่แจกแจงได้คือ 2 routine + 1 ใหม่ + 1 follow-up (รวม 4) คาดว่าเสียงพูดข้ามบางรายการ ไม่ได้ยืนยัน</li><li>ผู้พูดบอกว่า plugin /brief สร้างตามวิธีทำงานของฝ่ายกฎหมาย Anthropic และเป็น open protocol ที่ปรับตาม playbook ของบริษัทเองได้ เป็นข้ออ้างของผู้พูด คลิปไม่ได้อธิบายรายละเอียดว่าติดตั้งอย่างไร</li><li>ไม่มีตัวเลขเวลาที่ประหยัดจริง มีแค่ &quot;ชั่วโมงแรกของวัน&quot; เป็นเปรียบเทียบเชิงคุณภาพ</li></ul>
+<p class="mt-8"><a href="https://www.youtube.com/watch?v=EPUg9pmfPk0" rel="noopener" class="inline-flex px-4 py-2 rounded-lg bg-clay-700 text-white font-medium hover:bg-clay-800">ดูคลิปต้นฉบับบน YouTube</a></p>
+<p class="mt-3 text-xs text-zinc-500">ที่มา transcript: YouTube auto-caption · สรุปโดย AI ชื่อเฉพาะ/ตัวเลขอาจเพี้ยน ตรวจกับวิดีโอก่อนอ้างอิง · ไม่ใช่เนื้อหาทางการของ Anthropic</p>
+<nav class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800 flex gap-4 text-sm" aria-label="คลิปก่อนหน้า/ถัดไป"><a href="../talks/01-how-anthropic-uses-claude-in-gtm-engineering.html" class="hover:underline">← #01 จาก AE ไม่เคยเขียนโค้ด สู่คนสร้างตัวช่วยร่างอีเมลลูกค้าด้วย Claude</a><a href="../talks/03-claude-cowork-for-marketing-ops.html" class="hover:underline ml-auto text-right">#03 ทำ weekly metrics review ด้วย Cowork: Claude เตรียมตัวเลข คนเป็นคนกำหนดเรื่องเล่า →</a></nav>
+</main></body></html>
